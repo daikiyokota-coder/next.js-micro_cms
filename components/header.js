@@ -17,7 +17,7 @@ export default function Header() {
           ml="5"
         >
           <Link href="/">
-            My Portfolio
+            YokoLab
           </Link>
         </Heading>
         <Spacer/>

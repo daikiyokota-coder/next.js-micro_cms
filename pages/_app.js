@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import { Container, Heading, Flex, Spacer } from "@chakra-ui/react"
+import { Container } from "@chakra-ui/react"
 import Header from "../components/header"
 
 function MyApp({ Component, pageProps }) {
