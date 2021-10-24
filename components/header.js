@@ -1,4 +1,4 @@
-import { Heading, Flex, Spacer,  Wrap, WrapItem } from "@chakra-ui/react"
+import { Heading, Flex } from "@chakra-ui/react"
 import Link from 'next/link'
 
 export default function Header() {
@@ -17,22 +17,9 @@ export default function Header() {
           ml="5"
         >
           <Link href="/">
-            YokoLab
+            YokoBlog
           </Link>
         </Heading>
-        <Spacer/>
-        <Wrap mr="10">
-          <WrapItem>
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
-          </WrapItem>
-          <WrapItem>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </WrapItem>
-        </Wrap>
       </Flex>
     </>
   )
