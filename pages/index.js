@@ -4,7 +4,7 @@ import { client } from "../libs/client";
 import ContentsNav from "../components/contents_nav";
 
 export default function Home({ blog }) {
-  const blog_color  = "gray.700"
+  const blog_color  = "tomato"
   const about_color = "gray.300"
   return (
     <>
