@@ -3,12 +3,14 @@ import Link from "next/link";
 import { client } from "../libs/client";
 import ContentsNav from "../components/contents_nav";
 import PostCard from "../components/post_card";
+import NameCard from "../components/name_card";
 
 export default function Home({ blog }) {
   const blog_color  = "tomato"
   const about_color = "gray.300"
   return (
     <>
+      <NameCard />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
       <Center>
         <List width="100%">
