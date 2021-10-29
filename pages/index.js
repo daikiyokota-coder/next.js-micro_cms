@@ -1,4 +1,4 @@
-import { Center, List, ListItem } from "@chakra-ui/react"
+import { Box, Flex } from "@chakra-ui/react"
 import Link from "next/link";
 import { client } from "../libs/client";
 import ContentsNav from "../components/contents_nav";
@@ -12,19 +12,17 @@ export default function Home({ blog }) {
     <>
       <NameCard />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
-      <Center>
-        <List width="100%">
-          {blog.map((blog) => (
-            <ListItem key={blog.id}>
-              <Link href={`/blog/${blog.id}`}>
-                <a>
-                  <PostCard blog={blog}></PostCard>
-                </a>
-              </Link>
-            </ListItem>
-          ))}
-        </List>
-      </Center>
+      <Flex wrap="wrap" justify="space-between">
+        {blog.map((blog) => (
+          <Box key={blog.id} w={{ base: "100%", md: "50%"}} p="2">
+            <Link href={`/blog/${blog.id}`}>
+              <a>
+                <PostCard blog={blog}></PostCard>
+              </a>
+            </Link>
+          </Box>
+        ))}
+      </Flex>
     </>
   )
 }

@@ -29,7 +29,7 @@ export default function NameCard() {
         <Text fontSize="md" fontWeight="bold">My Skill 🔽</Text>
       </Center>
       <Center>
-        <Text fontSize="sm" color="gray.600" fontWeight="semibold">Ruby on Rails  |  React  |  TypeScript</Text>
+        <Text fontSize="sm" color="gray.600" fontWeight="semibold">Ruby on Rails  |  Next.js</Text>
       </Center>
     </Box>
   )

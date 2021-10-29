@@ -28,8 +28,9 @@ export default function Header() {
         <Heading
           as="h1"
           fontSize="xl"
-          mt="1"
-          ml="5"
+          fontFamily="fantasy"
+          mt="2"
+          ml={{ base: "2", md: "5"}}
           color={colorMode === 'light' ? "white" : "tomato"}
         >
           <Link href="/">
