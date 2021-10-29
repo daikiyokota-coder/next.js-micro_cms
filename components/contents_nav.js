@@ -4,7 +4,7 @@ import { Center, Text } from "@chakra-ui/react"
 export default function ContentsNav(props) {
   return (
     <>
-      <Center mt="7" mb="5">
+      <Center mt="7" mb="3">
         <Text fontSize="2xl" fontWeight="bold" mr="3" color={props.blog_color}>
           <Link href={`/`}>Blog</Link>
         </Text> |

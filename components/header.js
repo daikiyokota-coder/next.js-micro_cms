@@ -28,7 +28,7 @@ export default function Header() {
         <Heading
           as="h1"
           fontSize="xl"
-          fontFamily={{ base: "Comic Sans MS", md: "fantasy"}}
+          fontFamily={{ base: "arial", md: "fantasy"}}
           mt={{ base: "2px", md: "2"}}
           ml={{ base: "2", md: "5"}}
           color={colorMode === 'light' ? "white" : "tomato"}
