@@ -5,10 +5,10 @@ export default function ContentsNav(props) {
   return (
     <>
       <Center mt="7" mb="5">
-        <Text fontSize="xl" fontWeight="bold" mr="3" color={props.blog_color}>
+        <Text fontSize="2xl" fontWeight="bold" mr="3" color={props.blog_color}>
           <Link href={`/`}>Blog</Link>
         </Text> |
-        <Text fontSize="xl" fontWeight="bold" ml="3" color={props.about_color}>
+        <Text fontSize="2xl" fontWeight="bold" ml="3" color={props.about_color}>
           <Link href={`/about`}>About</Link>
         </Text>
       </Center>

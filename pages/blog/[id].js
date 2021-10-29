@@ -1,16 +1,25 @@
 import { client } from "../../libs/client";
+import MarkdownTemplate from "../../components/markdown_template";
+import { Box, Center, Image, Text, Flex, Spacer, useColorMode } from "@chakra-ui/react"
 
 export default function BlogId({ blog }) {
+  const createdAt = new Date( blog.createdAt );
+  const year = createdAt.getFullYear();
+  const month = createdAt.getMonth() + 1;
+  const day = createdAt.getDate();
+
   return (
     <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <p>{blog.category && `${blog.category.name}`}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-      />
+      <Center>
+        <Text fontSize="5xl">{blog.title}</Text>
+      </Center>
+      <Box mt="4" textAlign="right">
+        {/* <Text>{blog.category && `${blog.category.name}`}</Text> */}
+        <Text fontSize="xl">投稿日: {year}/{month}/{day}</Text>
+      </Box>
+      <Box mt="12">
+        <MarkdownTemplate source={blog.body} mb="16" />
+      </Box>
     </main>
   );
 }

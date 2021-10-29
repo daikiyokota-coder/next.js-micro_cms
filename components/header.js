@@ -4,6 +4,8 @@ import {
   Spacer,
   useColorMode,
   IconButton,
+  Box,
+
 } from "@chakra-ui/react"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
@@ -20,6 +22,8 @@ export default function Header() {
         padding={{ base: 3, md: 4 }}
         mb="5"
         opacity="0.9"
+        w="100%"
+        position="fixed"
       >
         <Heading
           as="h1"
@@ -44,6 +48,7 @@ export default function Header() {
           onClick={toggleColorMode}
         />
       </Flex>
+      <Box p="8" />
     </>
   )
 }

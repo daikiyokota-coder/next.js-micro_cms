@@ -7,7 +7,7 @@ export default function PostCard(props) {
   const day = createdAt.getDate();
 
   const { colorMode } = useColorMode()
-  const text_color = colorMode === 'light' ? "gray.600" : "gray.300"
+  const text_color = colorMode === 'light' ? "gray.00" : "gray.300"
   const bg_color   = colorMode === 'light' ? "gray.300" : "gray.600"
   return (
     <Flex>

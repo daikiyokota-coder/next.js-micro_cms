@@ -8,7 +8,7 @@ export default function NameCard() {
       h="350px"
       boxShadow="md"
       p="6"
-      mt="8"
+      mt="5"
       rounded="md"
     >
       <Center>
