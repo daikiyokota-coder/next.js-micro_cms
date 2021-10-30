@@ -27,7 +27,9 @@ export default function Controls(
     camera,
     gl: { domElement },
   } = useThree();
+  camera.position.set(0.8, 1.5, 1.6);
   const controls = useRef();
+
   useFrame(() => controls.current.update());
   return (
     <orbitControls {...props} ref={controls} args={[camera, domElement]} />

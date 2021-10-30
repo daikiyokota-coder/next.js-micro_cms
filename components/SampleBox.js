@@ -9,7 +9,7 @@ export default function SampleBox() {
   return (
     <mesh ref={ref}>
       <boxBufferGeometry attach='geometry' />
-      <meshBasicMaterial attach='material' color='hotpink' opacity={0.5} transparent />
+      <meshBasicMaterial attach='material' color='hotpink' opacity={0.9} transparent />
     </mesh>
   )
 }
