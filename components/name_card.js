@@ -7,7 +7,7 @@ import Controls from "../utils/Controls"
 
 export default function NameCard() {
   const LoadModel = () => {
-    const gltf = useLoader(GLTFLoader, "/RiggedFigure.glb")
+    const gltf = useLoader(GLTFLoader, "/CesiumMan.glb")
     return (
       <primitive object={gltf.scene} dispose={null} />
     )
