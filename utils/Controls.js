@@ -27,7 +27,20 @@ export default function Controls(
     camera,
     gl: { domElement },
   } = useThree();
-  camera.position.set(0.8, 1.5, 1.6);
+  camera.position.set(1, 2, 1);
+
+  let rot = 0;
+  tick();
+  // 毎フレーム時に実行されるループイベントです
+  function tick() {
+    rot += 0.3; // 毎フレーム角度を0.3度ずつ足していく
+      const radian = (rot * Math.PI) / 180;
+      // xz平面にて半径1の円を描くように動作。
+      camera.position.x = Math.sin(radian);
+      camera.position.z = Math.cos(radian);
+      requestAnimationFrame(tick);
+  }
+
   const controls = useRef();
 
   useFrame(() => controls.current.update());
