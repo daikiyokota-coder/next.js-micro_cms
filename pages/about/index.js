@@ -13,11 +13,11 @@ export default function About() {
         <Text fontSize="3xl" fontWeight="bold">Work</Text>
         <Box mt="3" ml="3" mr="3" mb="10">
           <Text lineHeight="8">
-            都内のWeb系企業でエンジニアをしています。
+            都内のWeb系企業でエンジニアをしています。受託開発チームに所属しており、Ruby on Railsを使ったWebアプリケーションの開発をメインで行っています。
           </Text>
-          <Text lineHeight="8">
+          {/* <Text lineHeight="8">
             Ruby on Railsを使ったWebアプリケーションの開発をメインで行っています。
-          </Text>
+          </Text> */}
         </Box>
 
         <Text fontSize="3xl" fontWeight="bold">Qualifications</Text>
@@ -35,10 +35,10 @@ export default function About() {
             エレキベース
           </Text>
           <Text lineHeight="8">
-            読書
+            個人開発(最近はNext.js多め)
           </Text>
           <Text lineHeight="8">
-            個人開発(最近はNext.js多め)
+            読書
           </Text>
         </Box>
       </Box>
