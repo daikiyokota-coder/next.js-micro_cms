@@ -5,9 +5,9 @@ import { Canvas, useLoader } from 'react-three-fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import Controls from "../utils/Controls"
 
-export default function NameCard() {
+export default function NameCard(props) {
   const LoadModel = () => {
-    const gltf = useLoader(GLTFLoader, "/CesiumMan.glb")
+    const gltf = useLoader(GLTFLoader, `/red_${props.chara_num}.glb`)
     return (
       <primitive object={gltf.scene} dispose={null} />
     )

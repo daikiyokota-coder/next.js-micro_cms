@@ -7,7 +7,7 @@ export default function About() {
   const about_color = "tomato"
   return(
     <>
-      <NameCard />
+      <NameCard chara_num="02" />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
       <Box mt="10" ml="10" mr="10">
         <Text fontSize="3xl" fontWeight="bold">Work</Text>

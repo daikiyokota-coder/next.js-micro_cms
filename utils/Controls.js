@@ -27,7 +27,7 @@ export default function Controls(
     camera,
     gl: { domElement },
   } = useThree();
-  camera.position.set(1, 2, 1);
+  camera.position.set(2, 0.8, 18);
 
   let rot = 0;
   tick();

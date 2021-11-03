@@ -10,7 +10,7 @@ export default function Home({ blog }) {
   const about_color = "gray.300"
   return (
     <>
-      <NameCard />
+      <NameCard chara_num="01" />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
       <Flex wrap="wrap" justify="space-between">
         {blog.map((blog) => (
