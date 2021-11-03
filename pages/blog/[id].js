@@ -10,8 +10,8 @@ export default function BlogId({ blog }) {
 
   return (
     <main>
-      <Center>
-        <Text fontSize="5xl">{blog.title}</Text>
+      <Center mt="3">
+        <Text fontSize={{ base: "2xl", md: "3xl"}}>{blog.title}</Text>
       </Center>
       <Box mt="4" textAlign="right">
         {/* <Text>{blog.category && `${blog.category.name}`}</Text> */}

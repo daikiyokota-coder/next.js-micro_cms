@@ -9,6 +9,14 @@ export default function PostCard(props) {
   const { colorMode } = useColorMode()
   const text_color = colorMode === 'light' ? "gray.00" : "gray.300"
   const bg_color   = colorMode === 'light' ? "gray.300" : "gray.600"
+
+  let title_length = blog.title.length
+  if (title_length > 24) {
+    var title = blog.title.substr(0, (title_length - (title_length - 24))) + '...'
+  } else {
+    var title = blog.title
+  }
+
   return (
     <Flex>
       <Box
@@ -23,13 +31,13 @@ export default function PostCard(props) {
       >
         <Box bg={bg_color} w="100%" h="70px" p="3" />
         <Box p="3">
-          <Center>
-            <Text fontSize="3xl" fontWeight="bold" color={text_color}>
-              {blog.title}
+          <Center h="70px">
+            <Text fontSize="2xl" fontWeight="bold" color={text_color} textAlign="center">
+              {title}
             </Text>
           </Center>
-          <Box mt="7" textAlign="right">
-            <Text fontSize="xl" color={text_color}>
+          <Box mb="3" textAlign="right">
+            <Text fontSize="lg" color={text_color}>
               {year}/{month}/{day}
             </Text>
           </Box>
