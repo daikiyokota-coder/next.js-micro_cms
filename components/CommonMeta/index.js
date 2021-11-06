@@ -10,6 +10,9 @@ export default function CommonMeta({ title = "YokoBlog", description = "This is 
       <meta property="og:description" content={description} />
       <meta property="og:image" content="/images/ogp.jpg" />
       <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:site" content="@hedgehog_0308" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content="/images/ogp.jpg" />
     </Head>
   )
