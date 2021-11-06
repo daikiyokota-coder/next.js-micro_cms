@@ -13,7 +13,7 @@ export default function CommonMeta({ title = "YokoBlog", description = "This is 
       <meta name="twitter:site" content="@hedgehog_0308" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content="/images/ogp.jpg" />
+      <meta name="twitter:image" content="https://next-js-micro-cms.vercel.app/images/ogp.jpg" />
     </Head>
   )
 }
