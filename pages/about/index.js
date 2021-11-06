@@ -1,12 +1,14 @@
 import ContentsNav from "../../components/contents_nav"
 import NameCard from "../../components/name_card"
 import { Box, Text } from "@chakra-ui/react"
+import CommonMeta from "../../components/CommonMeta"
 
 export default function About() {
   const blog_color  = "gray.300"
   const about_color = "tomato"
   return(
     <>
+      <CommonMeta title="YokoBlog | About" description="Explaining what yoko is like"/>
       <NameCard chara_num="02" />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
       <Box mt="10" ml="10" mr="10">
@@ -15,9 +17,6 @@ export default function About() {
           <Text lineHeight="8">
             都内のWeb系企業でエンジニアをしています。受託開発チームに所属しており、Ruby on Railsを使ったWebアプリケーションの開発をメインで行っています。
           </Text>
-          {/* <Text lineHeight="8">
-            Ruby on Railsを使ったWebアプリケーションの開発をメインで行っています。
-          </Text> */}
         </Box>
 
         <Text fontSize="3xl" fontWeight="bold">Qualifications</Text>

@@ -4,12 +4,14 @@ import { client } from "../libs/client";
 import ContentsNav from "../components/contents_nav";
 import PostCard from "../components/post_card";
 import NameCard from "../components/name_card";
+import CommonMeta from "../components/CommonMeta";
 
 export default function Home({ blog }) {
   const blog_color  = "tomato"
   const about_color = "gray.300"
   return (
     <>
+      <CommonMeta />
       <NameCard chara_num="01" />
       <ContentsNav blog_color={blog_color} about_color={about_color} />
       <Flex wrap="wrap" justify="space-between">

@@ -1,6 +1,7 @@
 import { client } from "../../libs/client";
 import MarkdownTemplate from "../../components/markdown_template";
 import { Box, Center, Image, Text, Flex, Spacer, useColorMode } from "@chakra-ui/react"
+import CommonMeta from "../../components/CommonMeta";
 
 export default function BlogId({ blog }) {
   const createdAt = new Date( blog.createdAt );
@@ -10,6 +11,7 @@ export default function BlogId({ blog }) {
 
   return (
     <main>
+      <CommonMeta title={blog.meta_title} description={blog.meta_description} />
       <Center mt="3">
         <Text fontSize={{ base: "2xl", md: "3xl"}}>{blog.title}</Text>
       </Center>
