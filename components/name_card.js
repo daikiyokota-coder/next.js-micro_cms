@@ -1,7 +1,8 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react"
 
 import React, { Suspense } from 'react'
-import { Canvas, useLoader } from 'react-three-fiber'
+//import { Canvas, useLoader } from 'react-three-fiber' なぜか急に使えなくなった。
+import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import Controls from "../utils/Controls"
 
