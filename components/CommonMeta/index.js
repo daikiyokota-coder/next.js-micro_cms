@@ -8,7 +8,7 @@ export default function CommonMeta({ title = "YokoBlog", description = "This is 
       <meta property="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${process.env.SITE_URL}/ogp_large.png`} />
+      <meta property="og:image" content="/images/ogp.jpg" />
       <meta name="twitter:card" content="summary_large_image"/>
     </Head>
   )
