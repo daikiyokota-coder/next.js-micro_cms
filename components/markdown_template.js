@@ -1,12 +1,7 @@
-import { BoxProps, Box, Text, UnorderedList, ListItem, Link } from '@chakra-ui/react';
-// import Markdown from 'markdown-to-jsx';
-// import { htmlToMarkdown } from '../utils/posts';
+import { Box, Text, UnorderedList, ListItem, Link } from '@chakra-ui/react';
 import parse, { domToReact, HTMLReactParserOptions} from 'html-react-parser';
 import highlight from 'highlight.js';
 import 'highlight.js/styles/night-owl.css';
-
-
-// const ChakraMarkdown = chakra(Markdown);
 
 const headingStyle = {
   mt: '10',
@@ -60,14 +55,6 @@ const code = {
     mb: '6',
   },
 };
-
-// const ul = {
-//   component: UnorderedList,
-// };
-
-// const li = {
-//   component: ListItem,
-// };
 
 const blockquote = {
   component: Box,
@@ -154,26 +141,6 @@ const options = {
 export default function MarkdownTemplate(props) {
   console.log(props)
   return (
-    
     <Box {...props}>{parse(props.source, options)}</Box>
-    // <ChakraMarkdown
-    //   lineHeight="tall"
-    //   options={{
-    //     wrapper: 'article',
-    //     overrides: {
-    //       h1,
-    //       h2,
-    //       h3,
-    //       p,
-    //       ul,
-    //       li,
-    //       blockquote,
-    //       a,
-    //     },
-    //   }}
-    //   {...props}
-    // >
-    //   {props.source}
-    // </ChakraMarkdown>
   );
 };

@@ -6,11 +6,9 @@ import {
   IconButton,
   Box,
   Center,
-
 } from "@chakra-ui/react"
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
-
 
 export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode()

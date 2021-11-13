@@ -1,7 +1,6 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react"
 
 import React, { Suspense } from 'react'
-//import { Canvas, useLoader } from 'react-three-fiber' なぜか急に使えなくなった。
 import { Canvas, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import Controls from "../utils/Controls"
@@ -32,12 +31,6 @@ export default function NameCard(props) {
       rounded="md"
     >
       <Center>
-        {/* <Image
-          borderRadius="full"
-          boxSize="150px"
-          src="/images/tars.gif"
-          alt="tars"
-        /> */}
         <Canvas>
           <UseModel />
           <Controls />

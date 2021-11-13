@@ -1,4 +1,4 @@
-import { Box, Center, Image, Text, Flex, Spacer, useColorMode } from "@chakra-ui/react"
+import { Box, Center, Text, Flex, useColorMode } from "@chakra-ui/react"
 export default function PostCard(props) {
   const blog = props.blog
   const createdAt = new Date( blog.createdAt );

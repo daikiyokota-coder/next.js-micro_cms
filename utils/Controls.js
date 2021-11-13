@@ -9,17 +9,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 extend({ OrbitControls });
 
-// declare global {
-//   namespace JSX {
-//     interface IntrinsicElements {
-//       readonly orbitControls: ReactThreeFiber.Object3DNode<
-//         OrbitControls,
-//         typeof OrbitControls
-//       >;
-//     }
-//   }
-// }
-
 export default function Controls(
   props
 ) {
@@ -27,15 +16,14 @@ export default function Controls(
     camera,
     gl: { domElement },
   } = useThree();
-  camera.position.set(2, 0.8, 18);
+  camera.position.set(1.5, 0.8, 18);
 
   let rot = 0;
   tick();
-  // 毎フレーム時に実行されるループイベントです
+
   function tick() {
-    rot += 0.3; // 毎フレーム角度を0.3度ずつ足していく
+    rot += 0.15;
       const radian = (rot * Math.PI) / 180;
-      // xz平面にて半径1の円を描くように動作。
       camera.position.x = Math.sin(radian);
       camera.position.z = Math.cos(radian);
       requestAnimationFrame(tick);
